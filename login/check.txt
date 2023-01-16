@@ -1,0 +1,7 @@
+- Username already taken.
+- onClick.goback()
+- home.html
+- hosting
+
+
+<a href="javascript:history.back();">[Go Back]</a>

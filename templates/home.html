@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthak Lamba | Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Anonymous_emblem.svg/800px-Anonymous_emblem.svg.png">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="home.js"></script>
+    <script src="https://kit.fontawesome.com/72b3cb533f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="main-content">
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQGSRfTHmLAolg/profile-displayphoto-shrink_800_800/0/1666990786583?e=1679529600&v=beta&t=eG7vTkS_LrKj-BM06ztTX8wc4zNAuAsQck1YdoWjG_8" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Sarthak Lamba.</span> <br>
+                    An aspring software and web application developer.
+                </h1>
+                <p>                   
+                  (He/Him) I am 19 y/o from India. 🇮🇳 <br>
+                  I'm currently pursuing Bachelor's in Computer Applications.<br>
+                  I love to research about different topics and protocols in Software industry.<br>
+                  I also do freelancing of all kinds. <br>
+                  I'm currently learning python (Django/Flask) and JavaScript.
+                </p>
+                <div class="btn-con">
+                    <a class="main-btn" href="https://github.com/sarthaklambaa">
+                        <!-- <span class="btn-text">Sarthak Lamba</span> -->
+                        <span class="btn-icon"  ><i class="fa-brands fa-github"></i></span>
+                      </a>
+                    &nbsp; &nbsp;
+                    <a class="main-btn" href="https://www.linkedin.com/in/sarthaklambaa/">
+                        <!-- <span class="btn-text">Sarthak Lamba</span> -->
+                        <span class="btn-icon"  ><i class="fa-brands fa-linkedin"></i></span>
+                      </a>
+                    &nbsp; &nbsp;
+                    <a class="main-btn" href="https://www.instagram.com/sarthaklambaa/">
+                        <!-- <span class="btn-text">Sarthak Lamba</span> -->
+                        <span class="btn-icon"  ><i class="fa-brands fa-instagram"></i></span>
+                      </a>
+                    &nbsp; &nbsp;
+                    <a class="main-btn" href="mailto:samlamba29@gmail.com">
+                        <!-- <span class="btn-text">Sarthak Lamba</span> -->
+                        <span class="btn-icon"  ><i class="fa-regular fa-envelope-open"></i></span>
+                      </a>
+                      
+                    </div>
+                    <br>
+                    <a class="main-btn" href="{% url 'logout'%}">
+                        <span class="btn-text">Logout</span>
+                        <!-- <span class="btn-icon"  ><i class="fa-regular fa-envelope-open"></i></span> -->
+                      </a>
+            </div>
+            <div style=" position: absolute; bottom: 0; left: 0; color: rgb(255, 255, 255); ">Made with ♥ By Sarthak Lamba</div>
+        </div>
+    
+</body>
+</html>
