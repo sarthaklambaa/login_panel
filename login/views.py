@@ -36,7 +36,7 @@ def signup_page(request):
 
 def login_page (request):
     if request.method == 'POST':
-        username=request.POST.get('username')
+        username=request.POST.get('username').lower()
         pass1=request.POST.get('pass')
         user=authenticate(request, username=username, password=pass1)
         if user is not None:
